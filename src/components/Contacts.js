@@ -5,13 +5,14 @@ function Contacts() {
 const [listContacts] = useState([
   {
     title: 'Phone Number',
-    value: '+1(727)4218953'
+    value: '+1(850)-896-9009'
   },{
     title: 'Email',
-    value: 'ayan.mambetova@gmail.com'
-  },{
-    title: 'Instagram',
-    value: '@aian@'
+    value: 'sultansofteng@gmail.com'
+  },
+  {
+    title:"LinkedIn",
+    value:"Nursultan Kasymov"
   }
 ])
 const divs = useRef([]);

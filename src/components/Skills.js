@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faHtml5, faCss3, faJs, faVuejs, faLaravel } from '@fortawesome/free-brands-svg-icons';
 import CustomHook from './CustomHook';
+
+
 
 function Skills() {
   const divs = useRef([]);
@@ -11,32 +12,32 @@ const [listSkills] = useState([
   {
     name: 'HTML',
     des: 'HTML is the backbone of my web development projects. I use it to structure web pages and create content, ensuring that everything is organized and easy to understand.',
-    icon: faHtml5
+    icon: ""
   },
   {
     name: 'CSS',
     des: 'CSS is my go-to for styling web applications. I leverage it to design visually appealing layouts, control typography, and create responsive designs that work on any device',
-    icon: faCss3
+    icon: ""
   },
   {
-    name: 'Javascript',
+    name: 'Javascript / Typescript',
     des: 'JavaScript is essential for adding interactivity to my websites. I use it to manipulate the DOM, handle events, and create dynamic content that enhances user experiences.',
-    icon: faJs},
+    icon: ""},
   {
     name: 'ReactJs',
     des: 'ReactJS is my framework of choice for building user interfaces. I use it to create reusable components that make my applications more efficient and maintainable.',
-    icon: faReact
+    icon: ""
   },
   {
-    name: 'VueJs',
-    des: 'I utilize VueJS for its simplicity and flexibility. It allows me to build interactive web applications and easily integrate it into existing projects.',
-    icon: faVuejs
+    name: 'Express JS',
+    des: 'Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. I use it to develop APIs and handle server-side logic efficiently, enabling seamless communication between the front end and back end.',
+    icon: ""
   },
   {
-    name: 'Laravel',
-    des: 'Laravel is my preferred PHP framework for backend development. I use it to create robust web applications, handle routing, and manage databases efficiently.',
-    icon: faLaravel
-  }
+    name: 'Spring Boot',
+    des: 'Spring Boot is my go-to framework for building Java-based enterprise applications. It simplifies the setup and development of new applications by providing built-in features like dependency injection, data access, and security, allowing me to focus on writing business logic and delivering high-quality software quickly.',
+    icon: ""
+  },
 
 ]);
   return (
@@ -52,7 +53,7 @@ const [listSkills] = useState([
         {
           listSkills.map((value, key) => (
             <div className={'item '} key={key} ref={(el) => el && divs.current.push(el)}>
-              <FontAwesomeIcon icon={value.icon} />
+            
               <h3>{ value.name }</h3>
               <div className="des">{value.des}</div>
             </div>
