@@ -26,6 +26,7 @@ useEffect(() => {
             }
           });
         }
+        
           window.addEventListener('scroll', handlScroll);
     }
 }, [activeTab,divs,scrollTab])
