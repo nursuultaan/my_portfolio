@@ -70,7 +70,7 @@ CustomHook(scrollTab, divs);
                         <div className="des">{value.language}</div>
                         {
                             value.links.map((link,index)=>{
-                                if(index == 1 ){
+                                if(index === 1 ){
                                    return <a href={link}>website </a>
                                 }
                                 return <a href={link}>github </a>
